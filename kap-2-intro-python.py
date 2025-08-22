@@ -122,6 +122,14 @@ print(antal_syskon+1)
 # Python är case-sensitive
 
 # Dynamiskt typat och statiskt typat
+# Python är dynamiskt typat
+# dvs vi behöver inte sätta en datatyp direkt
+ålder = 27
+
 # Jämför med svagt typat och starkt typat
 
 # print med formatering för att skriva ut variabler
+
+print("Du är:",ålder,"år")
+print("Du är: "+str(ålder)+" år")
+print(f"Du är {ålder} år")
