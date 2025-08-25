@@ -33,4 +33,6 @@ else:
 
 # and, or, not (inte xor)
 # prioriteringsregler med and/or
+    
+# nästlade if-else
 
