@@ -12,6 +12,10 @@
 
 # loopa igenom lista med for-loop
 
+# slicea listor
+
+# listomfattningar (list comprehensions)
+
 # Listmetoder ###
 # len()
 
@@ -44,9 +48,7 @@
 
 # Platser i minnet som inget refereras till längra tas omhand genom Pythons garbage collect
 
-# slicea listor
 
-# listomfattningar (list comprehensions)
 
 
 
