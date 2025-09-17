@@ -84,10 +84,22 @@ print(ny_vokal_tuple)
 # Referenser i Python
 
 # Skapa ett nytt variabelnamn som refererar till samma lista
-
 # Kopiera en lista
 
-# Platser i minnet som inget refereras till längra tas omhand genom Pythons garbage collect
+frukt_lista = ["annanas", "banan", "äpple"]
+
+annan_frukt_lista = [frukt for frukt in frukt_lista]
+tredje_frukt_lista = frukt_lista[:]
+
+annan_frukt_lista.append("päron")
+tredje_frukt_lista.append("papaya")
+
+print(frukt_lista)
+print(annan_frukt_lista)
+print(tredje_frukt_lista)
+
+
+# Platser i minnet som inget refereras till längre tas omhand genom Pythons garbage collect
 
 
 
