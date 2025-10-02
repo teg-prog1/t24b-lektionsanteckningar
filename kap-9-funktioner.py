@@ -93,6 +93,8 @@ while True:
 
 
 #####################################################################################################################################
+# HÄRIFRÅN BÖRJAR GENOMGÅNGEN MICKE
+
 # Revisit travelbag, hur fungerar det med listor som parameter
 
 # Om strukturen i ett program
