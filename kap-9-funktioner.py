@@ -96,6 +96,7 @@ while True:
 # Revisit travelbag, hur fungerar det med listor som parameter
 
 # Om strukturen i ett program
+# Ha en main-funktion!
 # Kort exempel: miniyatzy
 
 # Om default-värden på parametrar
