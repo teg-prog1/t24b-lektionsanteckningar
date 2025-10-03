@@ -76,7 +76,7 @@ def lägg_till_i_resväskan(travelbag):
 travelbag = []
 
 while True:
-   menyval = input("1. Kolla i resväskan\n2. Lägg sak i resväskan\n3. Ta bort sak i resväskan\n4Avsluta program")
+   menyval = input("1. Kolla i resväskan\n2. Lägg sak i resväskan\n3. Ta bort sak i resväskan\n4. Avsluta program\n\n")
 
    if menyval == "1":
        pass
@@ -97,15 +97,70 @@ while True:
 
 # Revisit travelbag, hur fungerar det med listor som parameter
 
+## Vi tittade igenom travelbag igen, pratade om listor som
+## föränderliga.
+## Touchade på globala variabler genom att visa att vi inte
+## kan tilldela ett nytt värde till variabeln
+
 # Om strukturen i ett program
+
+## Jag pratade om att funktioner är bra för både
+## - återanvändbarhet
+## - struktur och läsbarhet (minska kognitiv belastning)
+
 # Ha en main-funktion!
+
+## main är best practice
+## (och dessutom mycket användbart när vi lär oss programmera)
+##
+## Målet är att det inte ska finnas några globala variabler
+## eller i alla fall mycket få. Utan globala variabler får vi
+## kod med funktioner som inte påverkar sin omgivning utöver
+## parametrar och returvärden.
+##
+## När vi lär oss programmera kan vi försäkra oss genom att vi
+## inte använder globala variabler av misstag i våra egna funktioner
+## om vi låter huvudprogrammet (och alla variabler det behöver)
+## finnas i main()-funktion.
+
 # Kort exempel: miniyatzy
+
+## Vi tittade på strukturen, att dela upp ett spel i delar som anropar
+## varandra. Se miniyatzy.py
 
 # Om default-värden på parametrar
 
+# Skickar vi inte med en eller två parametrar i anropet
+# till den här funktionen så används default-värdena
+# från funktionsdefinitionen.
+def kasta_tärningar(antal_tärningar = 5, antal_sidor = 6):
+    pass
+
+fem_vanliga_tärningar = kasta_tärningar()
+
 # Om att returnera flera saker från en funktion
+
+# Löser vi en andragradsekvation vill vi returnera två svar
+def lös_andragradare(p, q):
+    x1 = -p/2+((p/2)**2 - q)**0.5
+    x2 = -p/2-((p/2)**2 - q)**0.5
+    # Kommatecken gör så att returvärdet blir en tuple
+    return x1, x2
+
+# Vi får tillbaka en tuple som vi kan använda rakt av
+rötter = lös_andragradare(-5, 6)
+print(rötter)
+
+# Eller packa upp.
+# Direkt vid anropet om vi vill
+rot1, rot2 = lös_andragradare(7, 12)
+print(rot1, rot2)
 
 # Om lokala och globala variabler (läs s 112-113)
 
+## Utöver vad vi sagt tidigare på lektionen så gick vi igenom exemplen i boken.
+## Läs dem på sidorna ovan.
+
 # Varför vill vi undvika globala variabler och vilka variabler är rimliga att ha globala?
 
+## Det här pratade vi inte riktigt om. Jag nämnde det, men ni reflekterade inte själva.
