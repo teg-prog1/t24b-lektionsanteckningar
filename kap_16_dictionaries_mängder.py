@@ -24,6 +24,9 @@ frukter = {"äpple", "kiwi", "banan", "äpple"}
 
 märken = {"äpple", "ferrari", "volvo"}
 
+#Skapa en tom mängd
+tom_mängd = set()
+
 # Metoder för mängder
 # https://www.w3schools.com/python/python_ref_set.asp 
 
